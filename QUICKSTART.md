@@ -1,8 +1,8 @@
 # 🚀 QUICK START GUIDE
 
-## तुरंत शुरू करें (Quick Start)
+## Get Started Instantly
 
-### Step 1: Setup करें
+### Step 1: Setup
 
 **Windows:**
 ```bash
@@ -15,20 +15,20 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-### Step 2: Test करें
+### Step 2: Test
 
 ```bash
-# Virtual environment activate करें (Windows)
+# Activate virtual environment (Windows)
 venv\Scripts\activate
 
-# Virtual environment activate करें (Linux/Mac)
+# Activate virtual environment (Linux/Mac)
 source venv/bin/activate
 
-# System test करें
+# Test system
 python test_system.py
 ```
 
-### Step 3: Application चलाएं
+### Step 3: Run Application
 
 **GUI Version (Recommended):**
 ```bash
@@ -44,62 +44,62 @@ python cli_version.py
 
 ## 📝 Usage Examples
 
-### Example 1: पहली बार Setup
+### Example 1: First Time Setup
 
 ```bash
-# 1. Dependencies install करें
+# 1. Install dependencies
 pip install -r requirements.txt
 
-# 2. Test करें
+# 2. Test
 python test_system.py
 
-# 3. Application चलाएं
+# 3. Run application
 python main.py
 ```
 
-### Example 2: Student Add करना
+### Example 2: Adding a Student
 
-1. Application खोलें
-2. "Add New Student" पर क्लिक करें
-3. नाम डालें (उदाहरण: "Raj Kumar")
-4. Camera में देखें
-5. SPACE दबाकर 5 photos लें
+1. Open application
+2. Click on "Add New Student"
+3. Enter name (example: "Raj Kumar")
+4. Look into camera
+5. Press SPACE to capture 5 photos
 6. Done!
 
-### Example 3: Attendance लेना
+### Example 3: Taking Attendance
 
-1. "Start Attendance Recognition" पर क्लिक करें
-2. Camera में चेहरा दिखाएं
-3. System automatically attendance मार्क करेगा
-4. 'q' दबाकर बंद करें
+1. Click on "Start Attendance Recognition"
+2. Show face to camera
+3. System will automatically mark attendance
+4. Press 'q' to close
 
 ---
 
 ## 🔧 Troubleshooting
 
-### Problem: Camera नहीं खुल रहा
+### Problem: Camera not opening
 ```python
-# Solution 1: config.py में camera index बदलें
-CAMERA_INDEX = 1  # या 2 try करें
+# Solution 1: Change camera index in config.py
+CAMERA_INDEX = 1  # or try 2
 
-# Solution 2: Close अन्य camera apps
-# Teams, Zoom, Skype बंद करें
+# Solution 2: Close other camera apps
+# Close Teams, Zoom, Skype
 ```
 
-### Problem: Face detect नहीं हो रहा
-- ✓ अच्छी lighting में काम करें
-- ✓ Camera के सामने सीधे देखें
-- ✓ Glasses हटा दें (optional)
+### Problem: Face not detected
+- ✓ Work in good lighting
+- ✓ Look directly at camera
+- ✓ Remove glasses (optional)
 
 ### Problem: Installation error
 ```bash
-# Windows: Visual Studio Build Tools install करें
+# Windows: Install Visual Studio Build Tools
 # https://visualstudio.microsoft.com/downloads/
 
-# Linux: Dependencies install करें
+# Linux: Install dependencies
 sudo apt-get install python3-dev cmake
 
-# Mac: Homebrew से install करें
+# Mac: Install via Homebrew
 brew install cmake
 ```
 
@@ -109,9 +109,9 @@ brew install cmake
 
 | Feature | Description | Status |
 |---------|-------------|--------|
-| Face Detection | Real-time चेहरा पहचान | ✅ Working |
+| Face Detection | Real-time face recognition | ✅ Working |
 | Face Recognition | Student identification | ✅ Working |
-| Attendance Marking | Auto attendance CSV में | ✅ Working |
+| Attendance Marking | Auto attendance in CSV | ✅ Working |
 | GUI Interface | User-friendly interface | ✅ Working |
 | CLI Version | Terminal-based option | ✅ Working |
 | Multiple Students | Unlimited students | ✅ Working |
@@ -121,40 +121,40 @@ brew install cmake
 
 ## 🎯 Tips for Best Results
 
-1. **Training के लिए:**
-   - अलग-अलग angles से photos लें
-   - अच्छी lighting में train करें
-   - Clear चेहरे की photos लें
+1. **For Training:**
+   - Take photos from different angles
+   - Train in good lighting
+   - Take clear face photos
 
-2. **Recognition के लिए:**
-   - Camera के सामने 1-2 feet दूरी रखें
-   - सीधे camera में देखें
-   - अच्छी lighting हो
+2. **For Recognition:**
+   - Keep 1-2 feet distance from camera
+   - Look directly at camera
+   - Ensure good lighting
 
-3. **Performance के लिए:**
-   - Camera quality अच्छी हो
-   - Background simple रखें
-   - एक समय में एक चेहरा दिखाएं
+3. **For Performance:**
+   - Use good camera quality
+   - Keep background simple
+   - Show one face at a time
 
 ---
 
 ## 🆘 Common Commands
 
 ```bash
-# Virtual environment activate करना
+# Activate virtual environment
 venv\Scripts\activate              # Windows
 source venv/bin/activate           # Linux/Mac
 
-# Dependencies install करना
+# Install dependencies
 pip install -r requirements.txt
 
-# System test करना
+# Test system
 python test_system.py
 
-# GUI application चलाना
+# Run GUI application
 python main.py
 
-# CLI application चलाना
+# Run CLI application
 python cli_version.py
 
 # Deactivate virtual environment
@@ -190,36 +190,36 @@ Want to understand the code better?
 
 ## 💡 Pro Tips
 
-- **For Schools/Colleges:** Multiple cameras use kar sakte hain
+- **For Schools/Colleges:** Can use multiple cameras
 - **For Events:** Portable setup - laptop + webcam
-- **For Security:** Unknown faces ki photo save karein
-- **For Analytics:** CSV data ko Excel में analyze karein
+- **For Security:** Save photos of unknown faces
+- **For Analytics:** Analyze CSV data in Excel
 
 ---
 
 ## ⚙️ Customization
 
-### Attendance timing change करना:
+### Change attendance timing:
 ```python
-# main.py में TIME_FORMAT change करें
+# Change TIME_FORMAT in main.py
 TIME_FORMAT = '%I:%M:%S %p'  # 12-hour format
 ```
 
-### Recognition strictness change करना:
+### Change recognition strictness:
 ```python
-# config.py में
-RECOGNITION_TOLERANCE = 0.5  # Stricter (कम value)
-RECOGNITION_TOLERANCE = 0.7  # Lenient (ज्यादा value)
+# In config.py
+RECOGNITION_TOLERANCE = 0.5  # Stricter (lower value)
+RECOGNITION_TOLERANCE = 0.7  # Lenient (higher value)
 ```
 
-### Photos की संख्या बढ़ाना:
+### Increase number of photos:
 ```python
-# config.py में
-NUM_IMAGES_PER_STUDENT = 10  # 5 से 10 करें
+# In config.py
+NUM_IMAGES_PER_STUDENT = 10  # Change from 5 to 10
 ```
 
 ---
 
-**🎉 Ready to go! अब attendance system use करें!**
+**🎉 Ready to go! Start using the attendance system!**
 
 For detailed documentation, see [README.md](README.md)
